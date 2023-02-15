@@ -1,0 +1,8 @@
+.message {
+    color: navy;
+    text-shadow: violet 0.1ex 0.1ex 0.2ch;
+}
+
+.full-name {
+    color: crimson;
+}
