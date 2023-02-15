@@ -1,0 +1,5 @@
+.form label::after {
+    content: ':';
+    margin-left: 0.5ch;
+    margin-right: 0.5ch;
+}
