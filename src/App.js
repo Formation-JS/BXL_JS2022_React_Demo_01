@@ -5,6 +5,7 @@ import DemoEffect from './components/demo-effect/demo-effect';
 import LoginForm from './components/login-form/login-form';
 import PersonTable from './components/person-table/person-table';
 import Welcome from './components/welcome/welcome';
+import LiveboardStation from './containers/liveboard-station/liveboard-station';
 
 // Donnée static pour la demo
 const people = [
@@ -32,11 +33,14 @@ function App() {
       {/*<h2>Formulaire</h2>
       <LoginForm /> */}
 
-      <h3>Cycle de vie (Effect)</h3>
+      {/* <h3>Cycle de vie (Effect)</h3>
       <button onClick={() => setDisplayEffect(d => !d)}>Change</button>
       {displayEffect && (
         <DemoEffect />
-      )}
+      )} */}
+
+      <h2>Requete Ajax</h2>
+      <LiveboardStation />
 
     </div>
   );
