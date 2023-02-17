@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import './App.css';
 import BigButton from './components/big-button/big-button';
+import DemoEffect from './components/demo-effect/demo-effect';
 import LoginForm from './components/login-form/login-form';
 import PersonTable from './components/person-table/person-table';
 import Welcome from './components/welcome/welcome';
@@ -12,6 +14,9 @@ const people = [
 ];
 
 function App() {
+
+  const [displayEffect, setDisplayEffect] = useState(true);
+
   return (
     <div className='App'>
       <Welcome 
@@ -24,8 +29,14 @@ function App() {
       {/* <h2>Event & State</h2>
       <BigButton /> */}
 
-      <h2>Formulaire</h2>
-      <LoginForm />
+      {/*<h2>Formulaire</h2>
+      <LoginForm /> */}
+
+      <h3>Cycle de vie (Effect)</h3>
+      <button onClick={() => setDisplayEffect(d => !d)}>Change</button>
+      {displayEffect && (
+        <DemoEffect />
+      )}
 
     </div>
   );
